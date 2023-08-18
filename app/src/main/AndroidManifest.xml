@@ -15,6 +15,12 @@
         android:theme="@style/Theme.TasksApplication"
         tools:targetApi="31">
         <activity
+            android:name=".lifeCycle.UpdateCounterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".lifeCycle.CounterActivity"
+            android:exported="false" />
+        <activity
             android:name=".list.ListActivity"
             android:exported="false" />
         <activity

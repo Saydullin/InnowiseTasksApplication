@@ -12,6 +12,7 @@ import com.example.tasksapplication.design.DynamicActivity
 import com.example.tasksapplication.design.ProfileActivity
 import com.example.tasksapplication.design.ScrollViewActivity
 import com.example.tasksapplication.design.ZActivity
+import com.example.tasksapplication.lifeCycle.CounterActivity
 import com.example.tasksapplication.list.ListActivity
 import com.example.tasksapplication.patterns.builder.Coffee
 import com.example.tasksapplication.patterns.facade.ApiManager
@@ -93,6 +94,10 @@ class MainActivity : AppCompatActivity() {
         }
         binding.usersListButton.setOnClickListener {
             val intent = Intent(this, ListActivity::class.java)
+            startActivity(intent)
+        }
+        binding.counterViewButton.setOnClickListener {
+            val intent = Intent(this, CounterActivity::class.java)
             startActivity(intent)
         }
 

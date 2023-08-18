@@ -6,8 +6,10 @@
     <color name="purple">#AA66CC</color>
     <color name="red">#EF3124</color>
     <color name="blue">#32B3E2</color>
+    <color name="darkBlue">#007AFE</color>
     <color name="orange">#FF8800</color>
     <color name="gray">#4E4E4E</color>
+    <color name="yellow">#FFCC00</color>
     <color name="light_blue_600">#FF039BE5</color>
     <color name="light_blue_900">#FF01579B</color>
     <color name="light_blue_A200">#FF40C4FF</color>
