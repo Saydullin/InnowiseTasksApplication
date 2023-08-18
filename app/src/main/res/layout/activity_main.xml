@@ -1,87 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="Main Activity"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_height="match_parent"
         android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        android:layout_gravity="center"
+        android:orientation="vertical">
 
-        <Button
-            android:id="@+id/observer_pattern"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Observer pattern" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="10dp" />
 
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="10dp" />
+            <Button
+                android:id="@+id/observer_pattern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Observer pattern" />
 
-        <Button
-            android:id="@+id/items_and_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="3 items and button" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="10dp" />
 
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="10dp" />
+            <Button
+                android:id="@+id/items_and_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 items and button" />
 
-        <Button
-            android:id="@+id/scroll_view_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ScrollView" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="10dp" />
 
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="10dp" />
+            <Button
+                android:id="@+id/scroll_view_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ScrollView" />
 
-        <Button
-            android:id="@+id/z_order_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Z Order" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="10dp" />
 
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="10dp" />
+            <Button
+                android:id="@+id/z_order_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Z Order" />
 
-        <Button
-            android:id="@+id/profile_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Profiles" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="10dp" />
 
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="10dp" />
+            <Button
+                android:id="@+id/profile_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profiles" />
 
-        <Button
-            android:id="@+id/dynamic_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Dynamic UI" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="10dp" />
+
+            <Button
+                android:id="@+id/dynamic_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dynamic UI" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="10dp" />
+
+            <Button
+                android:id="@+id/custom_view_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Custom View" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="10dp" />
+
+            <Button
+                android:id="@+id/custom_progress_view_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Custom Progress Bar" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="10dp" />
 
     </LinearLayout>
 
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

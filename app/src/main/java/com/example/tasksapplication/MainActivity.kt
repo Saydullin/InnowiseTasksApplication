@@ -3,10 +3,11 @@ package com.example.tasksapplication
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import com.example.tasksapplication.databinding.ActivityMainBinding
 import com.example.tasksapplication.design.CenteringActivity
+import com.example.tasksapplication.design.CustomProgressBarActivity
+import com.example.tasksapplication.design.CustomViewActivity
 import com.example.tasksapplication.design.DynamicActivity
 import com.example.tasksapplication.design.ProfileActivity
 import com.example.tasksapplication.design.ScrollViewActivity
@@ -17,7 +18,6 @@ import com.example.tasksapplication.patterns.facade.CacheManager
 import com.example.tasksapplication.patterns.facade.UserManager
 import com.example.tasksapplication.patterns.factory.LogisticFactory
 import com.example.tasksapplication.patterns.factory.model.TransportInfo
-import com.example.tasksapplication.patterns.factory.transport.SeaTransport
 import com.example.tasksapplication.patterns.singleton.Sun
 import com.example.tasksapplication.screens.FirstActivity
 
@@ -62,29 +62,32 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, FirstActivity::class.java)
             startActivity(intent)
         }
-
         binding.itemsAndButton.setOnClickListener {
             val intent = Intent(this, CenteringActivity::class.java)
             startActivity(intent)
         }
-
         binding.profileButton.setOnClickListener {
             val intent = Intent(this, ProfileActivity::class.java)
             startActivity(intent)
         }
-
         binding.zOrderButton.setOnClickListener {
             val intent = Intent(this, ZActivity::class.java)
             startActivity(intent)
         }
-
         binding.scrollViewButton.setOnClickListener {
             val intent = Intent(this, ScrollViewActivity::class.java)
             startActivity(intent)
         }
-
         binding.dynamicButton.setOnClickListener {
             val intent = Intent(this, DynamicActivity::class.java)
+            startActivity(intent)
+        }
+        binding.customViewButton.setOnClickListener {
+            val intent = Intent(this, CustomViewActivity::class.java)
+            startActivity(intent)
+        }
+        binding.customProgressViewButton.setOnClickListener {
+            val intent = Intent(this, CustomProgressBarActivity::class.java)
             startActivity(intent)
         }
 
