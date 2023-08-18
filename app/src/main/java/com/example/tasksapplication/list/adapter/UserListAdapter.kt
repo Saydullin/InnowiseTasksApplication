@@ -1,5 +1,6 @@
 package com.example.tasksapplication.list.adapter
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -11,8 +12,20 @@ import com.example.tasksapplication.list.model.UserSex
 
 class UserListAdapter(
     val context: Context,
-    val data: List<User>
+    val data: ArrayList<User>
 ): RecyclerView.Adapter<UserListAdapter.ViewHolder>() {
+
+    @SuppressLint("NotifyDataSetChanged")
+    fun clear() {
+        data.clear()
+        notifyDataSetChanged()
+    }
+
+    @SuppressLint("NotifyDataSetChanged")
+    fun update(newData: List<User>) {
+        data.addAll(newData)
+        notifyDataSetChanged()
+    }
 
     class ViewHolder(
         userItemBinding: UserItemBinding

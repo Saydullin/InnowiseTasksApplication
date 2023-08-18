@@ -19,7 +19,7 @@ class UserListFragment : Fragment() {
     ): View {
         val binding = FragmentUserListBinding.inflate(layoutInflater)
 
-        val users = UserGenerator.generateRandomUsers(30)
+        val users = UserGenerator.generateRandomUsers(30) as ArrayList
         binding.userListRecyclerView.adapter = UserListAdapter(requireContext(), users)
         binding.userListRecyclerView.layoutManager = LinearLayoutManager(requireContext())
 

@@ -33,11 +33,13 @@ class ListActivity : AppCompatActivity() {
                     true
                 }
                 R.id.action_profile -> {
-                    // Обработка нажатия на элемент "Profile"
+                    val asymmetryListFragment = AsymmetryListFragment()
+                    openFragment(asymmetryListFragment)
                     true
                 }
                 R.id.action_settings -> {
-                    // Обработка нажатия на элемент "Settings"
+                    val delayedUserListFragment = DelayedUserListFragment()
+                    openFragment(delayedUserListFragment)
                     true
                 }
                 else -> false
