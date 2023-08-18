@@ -3,7 +3,6 @@ package com.example.tasksapplication.lifeCycle
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.tasksapplication.R
 import com.example.tasksapplication.databinding.ActivityUpdateCounterBinding
 
 class UpdateCounterActivity : AppCompatActivity() {
@@ -20,7 +19,7 @@ class UpdateCounterActivity : AppCompatActivity() {
         binding.updateButton.setOnClickListener {
             val newIntent = Intent(this, CounterActivity::class.java)
             val cardRadius = intent.getFloatExtra("cardRadius", 0f)
-            newIntent.putExtra("cardRadius", cardRadius + 20f)
+            newIntent.putExtra("cardRadius", cardRadius + 10f)
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
             startActivity(newIntent)
             finish()

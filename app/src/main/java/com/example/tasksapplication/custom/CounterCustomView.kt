@@ -5,7 +5,6 @@ import android.content.Intent
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.LinearLayout
-import android.widget.Toast
 import com.example.tasksapplication.databinding.CounterCustomViewBinding
 import com.example.tasksapplication.lifeCycle.UpdateCounterActivity
 
@@ -26,12 +25,18 @@ class CounterCustomView(
         setListeners()
     }
 
+    fun getTitleSize(): Float = binding.counterTextView.textSize
+
     fun updateCornerRadius(radius: Float) {
         binding.counterCardView.radius = radius
     }
 
-    fun setCounterText(text: String) {
+    fun setCounterTitle(text: String) {
         binding.counterTextView.text = text
+    }
+
+    fun setTitleSize(size: Float) {
+        binding.counterTextView.textSize = size
     }
 
     private fun setListeners() {
