@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TasksApplication</string>
+    <string name="first_activity">First Activity</string>
+    <string name="temperature">Temperature</string>
+    <string name="second_activity">Second Activity</string>
+    <string name="third_activity">Third Activity</string>
+</resources>
