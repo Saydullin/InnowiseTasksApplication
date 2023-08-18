@@ -85,7 +85,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
                 android:textStyle="normal"
-                android:text="+Follow" />
+                android:text="+ Follow" />
 
         </LinearLayout>
 

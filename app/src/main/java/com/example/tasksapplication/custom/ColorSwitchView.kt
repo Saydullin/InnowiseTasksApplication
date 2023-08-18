@@ -42,13 +42,13 @@ class ColorSwitchView(
             currentIndex++
             checkCurrentIndexOut()
             binding.colorItem.setBackgroundColor(colors[currentIndex])
-            binding.textColor.text = colors[currentIndex].toString()
+            binding.textColor.text = currentIndex.toString()
         }
         binding.prevButton.setOnClickListener {
             currentIndex--
             checkCurrentIndexOut()
             binding.colorItem.setBackgroundColor(colors[currentIndex])
-            binding.textColor.text = colors[currentIndex].toString()
+            binding.textColor.text = currentIndex.toString()
         }
     }
 

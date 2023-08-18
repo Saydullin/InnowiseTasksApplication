@@ -12,6 +12,7 @@ import com.example.tasksapplication.design.DynamicActivity
 import com.example.tasksapplication.design.ProfileActivity
 import com.example.tasksapplication.design.ScrollViewActivity
 import com.example.tasksapplication.design.ZActivity
+import com.example.tasksapplication.list.ListActivity
 import com.example.tasksapplication.patterns.builder.Coffee
 import com.example.tasksapplication.patterns.facade.ApiManager
 import com.example.tasksapplication.patterns.facade.CacheManager
@@ -88,6 +89,10 @@ class MainActivity : AppCompatActivity() {
         }
         binding.customProgressViewButton.setOnClickListener {
             val intent = Intent(this, CustomProgressBarActivity::class.java)
+            startActivity(intent)
+        }
+        binding.usersListButton.setOnClickListener {
+            val intent = Intent(this, ListActivity::class.java)
             startActivity(intent)
         }
 
